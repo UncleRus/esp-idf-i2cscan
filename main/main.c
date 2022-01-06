@@ -4,6 +4,10 @@
 #include <freertos/task.h>
 #include <stdio.h>
 
+#ifndef APP_CPU_NUM
+#define APP_CPU_NUM PRO_CPU_NUM
+#endif
+
 #define SDA_PIN 16
 #define SCL_PIN 17
 
